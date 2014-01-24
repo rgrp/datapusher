@@ -10,6 +10,7 @@ if 'DATABASE_URL' in os.environ:
 
 web.configure()
 app = web.app
+print app.config.get('SQLALCHEMY_DATABASE_URI')
 
 if __name__ == "__main__":
     import logging
