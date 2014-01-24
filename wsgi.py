@@ -6,7 +6,7 @@ import datapusher.jobs as jobs
 assert(jobs.push_to_datastore)
 
 if 'DATABASE_URL' in os.environ:
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+    web.app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
 
 web.configure()
 app = web.app
