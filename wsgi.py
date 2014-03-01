@@ -7,11 +7,10 @@ assert(jobs.push_to_datastore)
 
 web.configure()
 app = web.app
-print app.config.get('SQLALCHEMY_DATABASE_URI')
 
 if __name__ == "__main__":
     import logging
-    port = os.environ.get('PORT', 5000)
+    port = os.environ.get('PORT', 8800)
     debug = os.environ.get('DEBUG', False)
     host = os.environ.get('HOST', '0.0.0.0')
     logging.basicConfig(level=logging.NOTSET)

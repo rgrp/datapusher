@@ -2,8 +2,8 @@
 DataPusher - Automatically add Data to the CKAN DataStore
 =========================================================
 
-.. image:: https://secure.travis-ci.org/okfn/datapusher.png?branch=master
-    :target: http://travis-ci.org/okfn/datapusher
+.. image:: https://secure.travis-ci.org/ckan/datapusher.png?branch=master
+    :target: http://travis-ci.org/ckan/datapusher
     :alt: Build Status
 
 A service that extracts data from files that contain tabular data (like CSV or
@@ -18,29 +18,9 @@ For an installation guide please go to the `DataPusher documentation`_.
 
 The Data Pusher is built on the `CKAN Service Provider`_
 and Messytables_.
-
-## For Developers
-
-Get the code:
-
-    git clone https://github.com/okfn/datapusher
-    cd datapusher
-
-Install the dependencies:
-
-    pip install -r requirements.txt
-    pip install -e .
-
-Run DataPusher
-
-    python wsgi.py
-
-Now open your favourite browser and point it at:
-
-<http://localhost:5000/>
     
-.. _Datastorer: https://github.com/okfn/ckanext-datastorer
+.. _Datastorer: https://github.com/ckan/ckanext-datastorer
 .. _DataPusher documentation: http://docs.ckan.org/projects/datapusher
-.. _CKAN Service Provider: https://github.com/okfn/ckan-service-provider
+.. _CKAN Service Provider: https://github.com/ckan/ckan-service-provider
 .. _Messytables: https://github.com/okfn/messytables
 
